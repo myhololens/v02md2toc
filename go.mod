@@ -1,4 +1,4 @@
-module github.com/myhololens/v2md2toc
+module github.com/myhololens/v02md2toc
 
 go 1.18
 
