@@ -17,7 +17,10 @@ lint:
 run:
 	@go run ${CMD_SRC} $(ARGS)
 
-build: clean lint
+# build: clean lint
+#	go build -race -o ${EXEC} ${CMD_SRC}
+
+build: clean
 	go build -race -o ${EXEC} ${CMD_SRC}
 
 test: clean lint
