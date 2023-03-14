@@ -1,4 +1,5 @@
-EXEC=gh-md-toc
+#EXEC=gh-md-toc
+EXEC=v02md2toc
 CMD_SRC=cmd/${EXEC}/main.go
 BUILD_DIR=build
 BUILD_OS="windows darwin linux"
