@@ -1,15 +1,15 @@
-github-markdown-toc
+v02md2toc
 ===================
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/ekalinin/github-markdown-toc.go)](https://goreportcard.com/report/github.com/ekalinin/github-markdown-toc.go)
-[![codecov](https://codecov.io/gh/ekalinin/github-markdown-toc.go/branch/master/graph/badge.svg)](https://codecov.io/gh/ekalinin/github-markdown-toc.go)
-[![Go Reference](https://pkg.go.dev/badge/github.com/ekalinin/github-markdown-toc.go.svg)](https://pkg.go.dev/github.com/ekalinin/github-markdown-toc.go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/myhololens/v02md2toc)](https://goreportcard.com/report/github.com/myhololens/v02md2toc)
+[![codecov](https://codecov.io/gh/myhololens/v02md2toc/branch/master/graph/badge.svg)](https://codecov.io/gh/myhololens/v02md2toc)
+[![Go Reference](https://pkg.go.dev/badge/github.com/myhololens/v02md2toc.svg)](https://pkg.go.dev/github.com/myhololens/v02md2toc)
 [![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/ekalinin/github-markdown-toc.go)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/myhololens/v02md2toc)
 
 
 This is a golang based implementation of the
-[github-markdown-toc](https://github.com/ekalinin/github-markdown-toc) tool.
+[v02md2toc](https://github.com/myhololens/v02md2toc) tool.
 
 The advantages of this implementation:
 
@@ -25,7 +25,7 @@ connected to the Internet.
 Table of Contents
 =================
 
-  * [github-markdown-toc](#github-markdown-toc)
+  * [v02md2toc](#v02md2toc)
   * [Installation](#installation)
     * [Precompiled binaries](#precompiled-binaries)
     * [Compiling from source](#compiling-from-source)
@@ -43,7 +43,7 @@ Table of Contents
     * [Bash/ZSH auto\-complete](#bashzsh-auto-complete)
   * [LICENSE](#license)
 
-Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
+Created by [gh-md-toc](https://github.com/myhololens/v02md2toc)
 
 Installation
 ============
@@ -53,12 +53,12 @@ Precompiled binaries
 
 See the releases page, "Downloads" section:
 
-  * https://github.com/ekalinin/github-markdown-toc.go/releases
+  * https://github.com/myhololens/v02md2toc/releases
 
 For example:
 
 ```bash
-$ wget https://github.com/ekalinin/github-markdown-toc.go/releases/download/1.1.0/gh-md-toc.linux.amd64.tgz
+$ wget https://github.com/myhololens/v02md2toc/releases/download/1.1.0/gh-md-toc.linux.amd64.tgz
 $ tar xzvf gh-md-toc.linux.amd64.tgz
 gh-md-toc
 $ ./gh-md-toc --version
@@ -98,7 +98,7 @@ Go Install
 You need golang installed in your OS:
 
 ```bash
-go install "github.com/ekalinin/github-markdown-toc.go/cmd/gh-md-toc@latest"
+go install "github.com/myhololens/v02md2toc/cmd/gh-md-toc@latest"
 ```
 
 Homebew (Mac only)
@@ -106,7 +106,7 @@ Homebew (Mac only)
 
 
 ```bash
-$ brew install github-markdown-toc
+$ brew install v02md2toc
 ```
 
 Tests
@@ -160,14 +160,14 @@ Remote files
 
 And here's an example, when you have a README.md like this:
 
-  * [README.md without TOC](https://github.com/ekalinin/envirius/blob/f939d3b6882bfb6ecb28ef7b6e62862f934ba945/README.md)
+  * [README.md without TOC](https://github.com/myhololens/envirius/blob/f939d3b6882bfb6ecb28ef7b6e62862f934ba945/README.md)
 
 And you want to generate TOC for it.
 
 There is nothing easier:
 
 ```bash
-➥ ./gh-md-toc https://github.com/ekalinin/envirius/blob/master/README.md
+➥ ./gh-md-toc https://github.com/myhololens/envirius/blob/master/README.md
 
 Table of Contents
 =================
@@ -213,7 +213,7 @@ README.md.
 
 And here is a result:
 
-  * [README.md with TOC](https://github.com/ekalinin/envirius/blob/24ea3be0d3cc03f4235fa4879bb33dc122d0ae29/README.md)
+  * [README.md with TOC](https://github.com/myhololens/envirius/blob/24ea3be0d3cc03f4235fa4879bb33dc122d0ae29/README.md)
 
 
 Multiple files
@@ -276,7 +276,7 @@ You can easily combine both ways:
 ```bash
 ➥ ./gh-md-toc \
     ~/projects/Dockerfile.vim/README.md \
-    https://github.com/ekalinin/sitemap.s/blob/master/README.md
+    https://github.com/myhololens/sitemap.s/blob/master/README.md
 
   * [Dockerfile.vim](~/projects/Dockerfile.vim/README.md#dockerfilevim)
   * [Screenshot](~/projects/Dockerfile.vim/README.md#screenshot)
@@ -285,12 +285,12 @@ You can easily combine both ways:
         * [OR using Vundle:](~/projects/Dockerfile.vim/README.md#or-using-vundle)
   * [License](~/projects/Dockerfile.vim/README.md#license)
 
-  * [sitemap.js](https://github.com/ekalinin/sitemap.js/blob/master/README.md#sitemapjs)
-    * [Installation](https://github.com/ekalinin/sitemap.js/blob/master/README.md#installation)
-    * [Usage](https://github.com/ekalinin/sitemap.js/blob/master/README.md#usage)
-    * [License](https://github.com/ekalinin/sitemap.js/blob/master/README.md#license)
+  * [sitemap.js](https://github.com/myhololens/sitemap.js/blob/master/README.md#sitemapjs)
+    * [Installation](https://github.com/myhololens/sitemap.js/blob/master/README.md#installation)
+    * [Usage](https://github.com/myhololens/sitemap.js/blob/master/README.md#usage)
+    * [License](https://github.com/myhololens/sitemap.js/blob/master/README.md#license)
 
-Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
+Created by [gh-md-toc](https://github.com/myhololens/v02md2toc)
 ```
 
 Starting Depth
@@ -308,7 +308,7 @@ Table of Contents
   * [Or using Pathogen:](#or-using-pathogen)
   * [Or using Vundle:](#or-using-vundle)
 
-Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
+Created by [gh-md-toc](https://github.com/myhololens/v02md2toc)
 ```
 
 Depth
@@ -352,7 +352,7 @@ Example for cli argument:
 Table of Contents
 =================
 
-* [github\-markdown\-toc](#github-markdown-toc)
+* [github\-markdown\-toc](#v02md2toc)
 * [Table of Contents](#table-of-contents)
 * [Installation](#installation)
 * [Tests](#tests)
@@ -368,7 +368,7 @@ Example for environment variable:
 Table of Contents
 =================
 
-* [github\-markdown\-toc](#github-markdown-toc)
+* [github\-markdown\-toc](#v02md2toc)
 * [Table of Contents](#table-of-contents)
 * [Installation](#installation)
 * [Tests](#tests)
@@ -411,5 +411,5 @@ apk add libc6-compat
 LICENSE
 =======
 
-See [LICENSE](https://github.com/ekalinin/github-markdown-toc.go/blob/master/LICENSE)
+See [LICENSE](https://github.com/myhololens/v02md2toc/blob/master/LICENSE)
 file.

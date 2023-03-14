@@ -12,7 +12,7 @@ import (
 const (
 	// Version is a current app version
 	Version   = "1.2.1"
-	userAgent = "github-markdown-toc.go v" + Version
+	userAgent = "v02md2toc v" + Version
 )
 
 // doHTTPReq executes a particular http request

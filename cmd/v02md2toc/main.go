@@ -7,7 +7,6 @@ import (
 
 	"gopkg.in/alecthomas/kingpin.v2"
 
-// 	ghtoc "github.com/ekalinin/github-markdown-toc.go"
 	ghtoc "github.com/myhololens/v02md2toc"
 )
 
@@ -87,6 +86,6 @@ func main() {
 	}
 
 	if !*hideFooter {
-		fmt.Println("Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)")
+		fmt.Println("Created by [v02md2toc](https://github.com/myhololens/v02md2toc)")
 	}
 }
