@@ -19,7 +19,7 @@ The advantages of this implementation:
   * parallel processing of multiple documents
 
 
-*Attention*: gh-md-toc is able to work properly only if your machine is
+*Attention*: v02md2toc is able to work properly only if your machine is
 connected to the Internet.
 
 Table of Contents
@@ -43,7 +43,7 @@ Table of Contents
     * [Bash/ZSH auto\-complete](#bashzsh-auto-complete)
   * [LICENSE](#license)
 
-Created by [gh-md-toc](https://github.com/myhololens/v02md2toc)
+Created by [v02md2toc](https://github.com/myhololens/v02md2toc)
 
 Installation
 ============
@@ -58,10 +58,10 @@ See the releases page, "Downloads" section:
 For example:
 
 ```bash
-$ wget https://github.com/myhololens/v02md2toc/releases/download/1.1.0/gh-md-toc.linux.amd64.tgz
-$ tar xzvf gh-md-toc.linux.amd64.tgz
-gh-md-toc
-$ ./gh-md-toc --version
+$ wget https://github.com/myhololens/v02md2toc/releases/download/1.1.0/v02md2toc.linux.amd64.tgz
+$ tar xzvf v02md2toc.linux.amd64.tgz
+v02md2toc
+$ ./v02md2toc --version
 1.1.0
 ```
 
@@ -72,8 +72,8 @@ You need golang installed in your OS:
 
 ```bash
 $ make build
-$ ./gh-md-toc --help
-usage: gh-md-toc [<flags>] [<path>...]
+$ ./v02md2toc --help
+usage: v02md2toc [<flags>] [<path>...]
 
 Flags:
   --help           Show context-sensitive help (also try --help-long and --help-man).
@@ -98,7 +98,7 @@ Go Install
 You need golang installed in your OS:
 
 ```bash
-go install "github.com/myhololens/v02md2toc/cmd/gh-md-toc@latest"
+go install "github.com/myhololens/v02md2toc/cmd/v02md2toc@latest"
 ```
 
 Homebew (Mac only)
@@ -127,7 +127,7 @@ STDIN
 Here's an example of TOC creating for markdown from STDIN:
 
 ```bash
-➥ cat ~/projects/Dockerfile.vim/README.md | ./gh-md-toc
+➥ cat ~/projects/Dockerfile.vim/README.md | ./v02md2toc
   * [Dockerfile.vim](#dockerfilevim)
   * [Screenshot](#screenshot)
   * [Installation](#installation)
@@ -142,7 +142,7 @@ Local files
 Here's an example of TOC creating for a local README.md:
 
 ```bash
-➥ ./gh-md-toc ~/projects/Dockerfile.vim/README.md                                                                                                                                                Вс. марта 22 22:51:46 MSK 2015
+➥ ./v02md2toc ~/projects/Dockerfile.vim/README.md                                                                                                                                                Вс. марта 22 22:51:46 MSK 2015
 
 Table of Contents
 =================
@@ -167,7 +167,7 @@ And you want to generate TOC for it.
 There is nothing easier:
 
 ```bash
-➥ ./gh-md-toc https://github.com/myhololens/envirius/blob/master/README.md
+➥ ./v02md2toc https://github.com/myhololens/envirius/blob/master/README.md
 
 Table of Contents
 =================
@@ -222,7 +222,7 @@ Multiple files
 It supports multiple files as well:
 
 ```bash
-➥ ./gh-md-toc \
+➥ ./v02md2toc \
     https://github.com/aminb/rust-for-c/blob/master/hello_world/README.md \
     https://github.com/aminb/rust-for-c/blob/master/control_flow/README.md \
     https://github.com/aminb/rust-for-c/blob/master/primitive_types_and_operators/README.md \
@@ -246,13 +246,13 @@ Processing of multiple documents is in parallel mode since version 0.4.0
 You can use (old) serial mode by passing option ``--serial`` in the console:
 
 ```bash
-$ ./gh-md-toc --serial ...
+$ ./v02md2toc --serial ...
 ```
 
 Timings:
 
 ```bash
-➥ time (./gh-md-toc --serial README.md ../envirius/README.ru.md ../github-toc/README.md > /dev/null)
+➥ time (./v02md2toc --serial README.md ../envirius/README.ru.md ../github-toc/README.md > /dev/null)
 
 real    0m1.200s
 user    0m0.040s
@@ -260,7 +260,7 @@ sys     0m0.004s
 ```
 
 ```bash
-➥ time (./gh-md-toc README.md ../envirius/README.ru.md ../github-toc/README.md > /dev/null)
+➥ time (./v02md2toc README.md ../envirius/README.ru.md ../github-toc/README.md > /dev/null)
 
 real    0m0.784s
 user    0m0.036s
@@ -274,7 +274,7 @@ Combo
 You can easily combine both ways:
 
 ```bash
-➥ ./gh-md-toc \
+➥ ./v02md2toc \
     ~/projects/Dockerfile.vim/README.md \
     https://github.com/myhololens/sitemap.s/blob/master/README.md
 
@@ -290,7 +290,7 @@ You can easily combine both ways:
     * [Usage](https://github.com/myhololens/sitemap.js/blob/master/README.md#usage)
     * [License](https://github.com/myhololens/sitemap.js/blob/master/README.md#license)
 
-Created by [gh-md-toc](https://github.com/myhololens/v02md2toc)
+Created by [v02md2toc](https://github.com/myhololens/v02md2toc)
 ```
 
 Starting Depth
@@ -300,7 +300,7 @@ Use `--start-depth=INT` to control the starting header level (i.e. include only 
 starting with `INT`)
 
 ```bash
-➥ ./gh-md-toc --start-depth=1 ~/projects/Dockerfile.vim/README.md
+➥ ./v02md2toc --start-depth=1 ~/projects/Dockerfile.vim/README.md
 
 Table of Contents
 =================
@@ -308,7 +308,7 @@ Table of Contents
   * [Or using Pathogen:](#or-using-pathogen)
   * [Or using Vundle:](#or-using-vundle)
 
-Created by [gh-md-toc](https://github.com/myhololens/v02md2toc)
+Created by [v02md2toc](https://github.com/myhololens/v02md2toc)
 ```
 
 Depth
@@ -317,7 +317,7 @@ Depth
 Use `--depth=INT` to control how many levels of headers to include in the TOC
 
 ```bash
-➥ ./gh-md-toc --depth=1 ~/projects/Dockerfile.vim/README.md
+➥ ./v02md2toc --depth=1 ~/projects/Dockerfile.vim/README.md
 
 Table of Contents
 =================
@@ -332,10 +332,10 @@ No escape
 ---------
 
 ```bash
-➥ ./gh-md-toc ~/projects/my/Dockerfile.vim/README.md | grep Docker
+➥ ./v02md2toc ~/projects/my/Dockerfile.vim/README.md | grep Docker
 * [Dockerfile\.vim](#dockerfilevim)
 
-➥ ./gh-md-toc --no-escape ~/projects/my/Dockerfile.vim/README.md | grep Docker
+➥ ./v02md2toc --no-escape ~/projects/my/Dockerfile.vim/README.md | grep Docker
 * [Dockerfile.vim](#dockerfilevim)
 ```
 
@@ -347,7 +347,7 @@ All your tokents are [here](https://github.com/settings/tokens).
 Example for cli argument:
 
 ```bash
-➥ ./gh-md-toc --depth=1 --token=2a2dabe1f2c2399bd542ba93fe6ce70fe7898563 README.md
+➥ ./v02md2toc --depth=1 --token=2a2dabe1f2c2399bd542ba93fe6ce70fe7898563 README.md
 
 Table of Contents
 =================
@@ -363,7 +363,7 @@ Table of Contents
 Example for environment variable:
 
 ```bash
-➥ GH_TOC_TOKEN=2a2dabe1f2c2399bd542ba93fe6ce70fe7898563 ./gh-md-toc --depth=1  README.md
+➥ GH_TOC_TOKEN=2a2dabe1f2c2399bd542ba93fe6ce70fe7898563 ./v02md2toc --depth=1  README.md
 
 Table of Contents
 =================
@@ -385,10 +385,10 @@ Just add a simple command into your `~/.bashrc` or `~/.zshrc`:
 
 ```bash
 # for zsh
-eval "$(gh-md-toc --completion-script-zsh)"
+eval "$(v02md2toc --completion-script-zsh)"
 
 # for bash
-eval "$(gh-md-toc --completion-script-bash)"
+eval "$(v02md2toc --completion-script-bash)"
 ```
 
 Alpine Linux
@@ -398,7 +398,7 @@ Alpine Linux uses _musl_ instead of _glibc_ by default. If you install [`binutil
 
 ```bash
 apk add binutils && \
-readelf -l /path/to/gh-md-toc
+readelf -l /path/to/v02md2toc
 ```
 
 …you'll see that it relies on `/lib64/ld-linux-x86-64.so.2` as its _interpreter_. You can solve this by installing [libc6-compat](https://pkgs.alpinelinux.org/contents?file=ld-linux-x86-64*) alongside downloading the Linux `amd64` build.

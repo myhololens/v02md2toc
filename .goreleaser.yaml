@@ -1,4 +1,4 @@
-project_name: gh-md-toc
+project_name: v02md2toc
 before:
   hooks:
     # You may remove this if you don't use go modules.
@@ -6,7 +6,7 @@ before:
 builds:
   - env:
       - CGO_ENABLED=0
-    main: ./cmd/gh-md-toc
+    main: ./cmd/v02md2toc
     goos:
       - linux
       - windows

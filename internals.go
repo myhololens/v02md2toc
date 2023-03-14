@@ -11,7 +11,7 @@ import (
 
 const (
 	// Version is a current app version
-	Version   = "1.2.1"
+	Version   = "1.2.2"
 	userAgent = "v02md2toc v" + Version
 )
 
