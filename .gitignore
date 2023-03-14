@@ -32,6 +32,7 @@
 *.tgz
 TODO.md
 gh-md-toc
+v02md2toc
 build
 
 dist/
